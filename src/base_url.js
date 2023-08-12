@@ -1,1 +1,1 @@
-export const baseUrl = ""
+export const baseUrl = "cheese-app-backend-ag.vercel.app"
