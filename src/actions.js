@@ -36,12 +36,12 @@ const updateCheese = {
     image: formData.get("image")
 }
 // send updated cheese to the backend API
-await fetch(`${baseUrl}cheese/${id}`, {
+await fetch (`${baseUrl}/cheeses/${id}`, {
     // tell fetch to make a put request
     method: "PUT",
     headers: {
         // tell backend the data is JSON
-        "content-Type":"application/json"
+        "content-Type": "application/json"
     },
     // send the json string of the updated Cheese object
     body: JSON.stringify(updateCheese)
